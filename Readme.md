@@ -13,7 +13,7 @@ A modern, responsive portfolio website built with HTML, CSS, and JavaScript feat
 - **SEO Friendly** - Semantic HTML structure
 - **Cross-browser Compatible** - Works on all modern browsers
 
-## 🚀 [Live Demo](https://coderafay.github.io/Portfolio/)
+## 🚀 [Live Demo](https://coderafay.github.io/rafay-portfolio/)
 
 ## 📁 Project Structure
 
@@ -44,8 +44,8 @@ portfolio-website/
 
 ### 1. Clone or Download
 ```bash
-git clone https://github.com/CodeRafay/Portfolio.git
-cd Portfolio
+git clone https://github.com/CodeRafay/rafay-portfolio.git
+cd rafay-portfolio
 ```
 
 ### 2. Add Your Assets
