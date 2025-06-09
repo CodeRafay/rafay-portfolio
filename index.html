@@ -2,830 +2,633 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rafay Adeel | Developer. Designer. Dreamer.</title>
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-  <!-- AOS Animation Library -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafay Adeel | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#navbar">
-  <!-- Preloader -->
-  <div id="preloader">
-    <div class="loader">
-      <div class="inner one"></div>
-      <div class="inner two"></div>
-      <div class="inner three"></div>
-    </div>
-  </div>
-
-  <!-- Header -->
-  <header id="header" class="fixed-top">
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-dark">
-      <div class="container">
-        <a class="navbar-brand" href="#hero">
-          <span class="logo">RA</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#hero">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#about">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#skills">Skills</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#projects">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#testimonials">Testimonials</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
-            </li>
-            <li class="nav-item ms-lg-3">
-              <a class="btn btn-outline-light download-btn" href="assets/resume.pdf" download>Download Resume</a>
-            </li>
-          </ul>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#home">RA</a>
+            </div>
+            <nav class="desktop-nav">
+                <ul>
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#resume" class="nav-link resume-link">Resume</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
         </div>
-      </div>
-    </nav>
-  </header>
+    </header>
 
-  <!-- Hero Section -->
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-          <h1 class="hero-title">Hi, I'm <span class="highlight">Rafay Adeel</span></h1>
-          <h2 class="hero-subtitle">Developer. Designer. Dreamer.</h2>
-          <p class="hero-text">Passionate about building beautiful, functional digital experiences. I turn ideas into
-            code and creativity into reality.</p>
-          <div class="hero-btns">
-            <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
-            <a href="#contact" class="btn btn-outline-light btn-lg ms-3">Let's Talk</a>
-          </div>
-        </div>
-        <div class="col-lg-6 d-none d-lg-block" data-aos="fade-left" data-aos-delay="400">
-          <div class="hero-image-container">
-            <div class="hero-image-bg"></div>
-            <div class="hero-image-shape"></div>
-            <div class="hero-image-dots"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hero-scroll-indicator">
-      <a href="#about">
-        <div class="mouse">
-          <div class="wheel"></div>
-        </div>
-        <div>
-          <span class="scroll-arrow">
-            <span></span>
-            <span></span>
-          </span>
-        </div>
-      </a>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="section-padding">
-    <div class="container">
-      <div class="section-title" data-aos="fade-up">
-        <h2>Who Am I?</h2>
-        <div class="title-bar"></div>
-      </div>
-      <div class="row align-items-center">
-        <div class="col-lg-5 mb-4 mb-lg-0" data-aos="fade-right" data-aos-delay="200">
-          <div class="about-img-container">
-            <div class="about-img-wrapper">
-              <img src="assets/img_pf.jpeg?height=500&width=400" alt="Rafay Adeel" class="img-fluid about-img">
-            </div>
-            <div class="experience-badge">
-              <span class="exp-number">5+</span>
-              <span class="exp-text">Years<br>Experience</span>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-7" data-aos="fade-left" data-aos-delay="400">
-          <div class="about-content">
-            <p class="lead">I'm a passionate developer and designer with a keen eye for detail and a love for creating
-              seamless user experiences.</p>
-            <p>With over 5 years of experience in web development and design, I've worked on a variety of projects
-              ranging from small business websites to complex web applications. My approach combines technical expertise
-              with creative problem-solving to deliver solutions that not only work flawlessly but also look stunning.
-            </p>
-
-            <div class="collapse" id="moreAbout">
-              <p>I hold a Bachelor's degree in Computer Science and have completed several certifications in modern web
-                technologies. My goal is to continue pushing the boundaries of what's possible in web development while
-                creating meaningful digital experiences that solve real problems.</p>
-              <p>When I'm not coding, you can find me exploring new design trends, contributing to open-source projects,
-                or hiking in the great outdoors.</p>
-            </div>
-
-            <button class="btn btn-link p-0 read-more-btn" type="button" data-bs-toggle="collapse"
-              data-bs-target="#moreAbout" aria-expanded="false" aria-controls="moreAbout">
-              Read More <i class="fas fa-chevron-down"></i>
-            </button>
-
-            <div class="about-info mt-4">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="info-item">
-                    <span class="info-label">Name:</span>
-                    <span class="info-value">Rafay Adeel</span>
-                  </div>
-                  <div class="info-item">
-                    <span class="info-label">Email:</span>
-                    <span class="info-value">rafayadeel1999@gmail</span>
-                  </div>
-                </div>
-                <div class="col-md-6">
-                  <div class="info-item">
-                    <span class="info-label">Location:</span>
-                    <span class="info-value"> Faisalabad, PB, Pakistan </span>
-                  </div>
-                  <div class="info-item">
-                    <span class="info-label">Availability:</span>
-                    <span class="info-value available">Available for Freelance</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="mt-4">
-              <a href="#contact" class="btn btn-primary">Let's Connect</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills" class="section-padding bg-darker">
-    <div class="container">
-      <div class="section-title" data-aos="fade-up">
-        <h2>What I Do Best</h2>
-        <div class="title-bar"></div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="skills-content">
-            <p class="lead">I specialize in creating responsive, user-friendly websites and applications using modern
-              technologies and best practices.</p>
-            <p>My technical expertise spans front-end and back-end development, with a strong focus on creating seamless
-              user experiences.</p>
-          </div>
-
-          <div class="skill-categories mt-5">
-            <div class="row">
-              <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="100">
-                <div class="skill-category">
-                  <div class="skill-icon">
-                    <i class="fas fa-code"></i>
-                  </div>
-                  <h4>Web Development</h4>
-                  <p>Creating responsive, interactive websites with clean code and optimal performance.</p>
-                </div>
-              </div>
-
-              <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="200">
-                <div class="skill-category">
-                  <div class="skill-icon">
-                    <i class="fas fa-server"></i>
-                  </div>
-                  <h4>Backend Development</h4>
-                  <p>Building robust server-side applications with Node.js and database integration.</p>
-                </div>
-              </div>
-
-              <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="300">
-                <div class="skill-category">
-                  <div class="skill-icon">
-                    <i class="fas fa-paint-brush"></i>
-                  </div>
-                  <h4>UI/UX Design</h4>
-                  <p>Designing intuitive interfaces and seamless user experiences with Figma and Adobe XD.</p>
-                </div>
-              </div>
-
-              <div class="col-md-6 mb-4" data-aos="zoom-in" data-aos-delay="400">
-                <div class="skill-category">
-                  <div class="skill-icon">
-                    <i class="fas fa-tools"></i>
-                  </div>
-                  <h4>Tools & Technologies</h4>
-                  <p>Proficient with Git, VS Code, Bootstrap, and other modern development tools.</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-          <div class="skills-progress mt-4 mt-lg-0">
-            <div class="skill-item" data-aos="fade-up" data-aos-delay="100">
-              <div class="skill-info">
-                <h5>HTML/CSS</h5>
-                <span>95%</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="95" aria-valuemin="0"
-                  aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="skill-item" data-aos="fade-up" data-aos-delay="150">
-              <div class="skill-info">
-                <h5>JavaScript</h5>
-                <span>90%</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-                  aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="skill-item" data-aos="fade-up" data-aos-delay="200">
-              <div class="skill-info">
-                <h5>Node.js</h5>
-                <span>85%</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85" aria-valuemin="0"
-                  aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="skill-item" data-aos="fade-up" data-aos-delay="250">
-              <div class="skill-info">
-                <h5>Bootstrap</h5>
-                <span>90%</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0"
-                  aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="skill-item" data-aos="fade-up" data-aos-delay="300">
-              <div class="skill-info">
-                <h5>UI/UX Design</h5>
-                <span>80%</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-                  aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="skill-item" data-aos="fade-up" data-aos-delay="350">
-              <div class="skill-info">
-                <h5>C++</h5>
-                <span>75%</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0"
-                  aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="skill-item" data-aos="fade-up" data-aos-delay="400">
-              <div class="skill-info">
-                <h5>C#</h5>
-                <span>70%</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0"
-                  aria-valuemax="100"></div>
-              </div>
-            </div>
-
-            <div class="skill-item" data-aos="fade-up" data-aos-delay="450">
-              <div class="skill-info">
-                <h5>Python</h5>
-                <span>80%</span>
-              </div>
-              <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0"
-                  aria-valuemax="100"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section-padding">
-    <div class="container">
-      <div class="section-title" data-aos="fade-up">
-        <h2>My Work</h2>
-        <div class="title-bar"></div>
-      </div>
-
-      <div class="project-filters mb-5" data-aos="fade-up">
-        <ul class="filters-list">
-          <li class="active" data-filter="*">All</li>
-          <li data-filter=".web">Web</li>
-          <li data-filter=".mobile">Mobile</li>
-          <li data-filter=".ui-ux">UI/UX</li>
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav">
+        <ul>
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="#resume" class="resume-link">Resume</a></li>
         </ul>
-      </div>
-
-      <div class="row project-container">
-        <div class="col-md-6 col-lg-4 mb-4 project-item web" data-aos="fade-up" data-aos-delay="100">
-          <div class="project-card">
-            <div class="project-img">
-              <img src="/placeholder.svg?height=300&width=400" alt="E-commerce Website" class="img-fluid">
-              <div class="project-overlay">
-                <div class="project-btns">
-                  <a href="#" class="project-btn" data-bs-toggle="modal" data-bs-target="#projectModal1">View
-                    Project</a>
-                  <a href="https://github.com" target="_blank" class="project-btn">GitHub</a>
-                </div>
-              </div>
-            </div>
-            <div class="project-info">
-              <h4>E-commerce Platform</h4>
-              <p>A full-featured online store with payment integration</p>
-              <div class="project-tech">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Node.js</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 mb-4 project-item mobile" data-aos="fade-up" data-aos-delay="200">
-          <div class="project-card">
-            <div class="project-img">
-              <img src="/placeholder.svg?height=300&width=400" alt="Fitness App" class="img-fluid">
-              <div class="project-overlay">
-                <div class="project-btns">
-                  <a href="#" class="project-btn" data-bs-toggle="modal" data-bs-target="#projectModal2">View
-                    Project</a>
-                  <a href="https://github.com" target="_blank" class="project-btn">GitHub</a>
-                </div>
-              </div>
-            </div>
-            <div class="project-info">
-              <h4>Fitness Tracker App</h4>
-              <p>Mobile-responsive workout and nutrition tracking application</p>
-              <div class="project-tech">
-                <span>HTML5</span>
-                <span>CSS3</span>
-                <span>JavaScript</span>
-                <span>Bootstrap</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 mb-4 project-item ui-ux" data-aos="fade-up" data-aos-delay="300">
-          <div class="project-card">
-            <div class="project-img">
-              <img src="/placeholder.svg?height=300&width=400" alt="Dashboard UI" class="img-fluid">
-              <div class="project-overlay">
-                <div class="project-btns">
-                  <a href="#" class="project-btn" data-bs-toggle="modal" data-bs-target="#projectModal3">View
-                    Project</a>
-                  <a href="https://github.com" target="_blank" class="project-btn">GitHub</a>
-                </div>
-              </div>
-            </div>
-            <div class="project-info">
-              <h4>Analytics Dashboard</h4>
-              <p>Interactive data visualization dashboard with real-time updates</p>
-              <div class="project-tech">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Chart.js</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 mb-4 project-item web" data-aos="fade-up" data-aos-delay="400">
-          <div class="project-card">
-            <div class="project-img">
-              <img src="/placeholder.svg?height=300&width=400" alt="Blog Platform" class="img-fluid">
-              <div class="project-overlay">
-                <div class="project-btns">
-                  <a href="#" class="project-btn" data-bs-toggle="modal" data-bs-target="#projectModal4">View
-                    Project</a>
-                  <a href="https://github.com" target="_blank" class="project-btn">GitHub</a>
-                </div>
-              </div>
-            </div>
-            <div class="project-info">
-              <h4>Content Management System</h4>
-              <p>Custom blog platform with admin dashboard</p>
-              <div class="project-tech">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Node.js</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 mb-4 project-item ui-ux" data-aos="fade-up" data-aos-delay="500">
-          <div class="project-card">
-            <div class="project-img">
-              <img src="/placeholder.svg?height=300&width=400" alt="Travel App UI" class="img-fluid">
-              <div class="project-overlay">
-                <div class="project-btns">
-                  <a href="#" class="project-btn" data-bs-toggle="modal" data-bs-target="#projectModal5">View
-                    Project</a>
-                  <a href="https://github.com" target="_blank" class="project-btn">GitHub</a>
-                </div>
-              </div>
-            </div>
-            <div class="project-info">
-              <h4>Travel Planner UI</h4>
-              <p>User interface design for a travel planning application</p>
-              <div class="project-tech">
-                <span>Figma</span>
-                <span>Adobe XD</span>
-                <span>HTML</span>
-                <span>CSS</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6 col-lg-4 mb-4 project-item mobile" data-aos="fade-up" data-aos-delay="600">
-          <div class="project-card">
-            <div class="project-img">
-              <img src="/placeholder.svg?height=300&width=400" alt="Weather App" class="img-fluid">
-              <div class="project-overlay">
-                <div class="project-btns">
-                  <a href="#" class="project-btn" data-bs-toggle="modal" data-bs-target="#projectModal6">View
-                    Project</a>
-                  <a href="https://github.com" target="_blank" class="project-btn">GitHub</a>
-                </div>
-              </div>
-            </div>
-            <div class="project-info">
-              <h4>Weather Forecast App</h4>
-              <p>Real-time weather data with location-based forecasts</p>
-              <div class="project-tech">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>API Integration</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
 
-    <!-- Project Modals -->
-    <div class="modal fade" id="projectModal1" tabindex="-1" aria-labelledby="projectModal1Label" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="projectModal1Label">E-commerce Platform</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <img src="/placeholder.svg?height=400&width=800" alt="E-commerce Website" class="img-fluid mb-4">
-            <h4>Project Overview</h4>
-            <p>A comprehensive e-commerce platform built from scratch with a focus on user experience and performance.
-              The platform includes product listings, user authentication, shopping cart functionality, and secure
-              payment processing.</p>
-            <h4>Technical Details</h4>
-            <p>Built with HTML, CSS, JavaScript, and Node.js. The frontend uses Bootstrap for responsive design, while
-              the backend handles user authentication, product management, and order processing. Payment integration is
-              handled securely through Stripe API.</p>
-            <h4>Challenges & Solutions</h4>
-            <p>One of the main challenges was optimizing the product search functionality for large inventories. I
-              implemented an efficient search algorithm with filters and sorting options to enhance the user experience
-              and improve performance.</p>
-          </div>
-          <div class="modal-footer">
-            <a href="https://github.com" target="_blank" class="btn btn-outline-primary">GitHub Repository</a>
-            <a href="#" target="_blank" class="btn btn-primary">Live Demo</a>
-          </div>
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="video-bg-container">
+            <video class="video-bg" autoplay muted loop playsinline>
+                <!--will add video when available-->
+                <source src="background.mp4" type="video/mp4">
+            </video>
         </div>
-      </div>
-    </div>
-
-    <!-- Additional project modals would be similar to the one above -->
-  </section>
-
-  <!-- Testimonials Section -->
-  <section id="testimonials" class="section-padding bg-darker">
-    <div class="container">
-      <div class="section-title" data-aos="fade-up">
-        <h2>What People Say</h2>
-        <div class="title-bar"></div>
-      </div>
-
-      <div class="testimonial-carousel" data-aos="fade-up" data-aos-delay="200">
-        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="testimonial-item">
-                <div class="testimonial-content">
-                  <div class="testimonial-icon">
-                    <i class="fas fa-quote-left"></i>
-                  </div>
-                  <p>Rafay is an exceptional developer who consistently delivers high-quality work. His attention to
-                    detail and problem-solving skills are impressive. He transformed our outdated website into a modern,
-                    user-friendly platform that has significantly improved our online presence.</p>
-                  <div class="testimonial-author">
-                    <div class="author-img">
-                      <img src="/placeholder.svg?height=80&width=80" alt="Sarah Johnson">
+        <div class="container">
+            <div class="home-content">
+                <div class="text-zone">
+                    <h1 class="title">
+                        <span class="title-word">Hello,</span>
+                        <span class="title-word">I'm</span>
+                        <span class="title-word highlight">Rafay Adeel</span>
+                    </h1>
+                    <h2 class="subtitle">I am a <span id="animated-subtitle"></span></h2>
+                    <p class="description">
+                        An ambitious student currently pursuing a bachelor's in Computer Science from FAST NUCES,
+                        skilled in problem-solving and analytical thinking.
+                    </p>
+                    <div class="cta-buttons">
+                        <a href="#projects" class="btn primary-btn">View Projects</a>
+                        <a href="#contact" class="btn secondary-btn">Contact Me</a>
                     </div>
-                    <div class="author-info">
-                      <h5>Sarah Johnson</h5>
-                      <span>Marketing Director, TechCorp</span>
-                    </div>
-                  </div>
                 </div>
-              </div>
+                <div class="home-image">
+                    <div class="image-container">
+                        <div class="circle-bg"></div>
+                        <img src="assets/profile-image.png" alt="Rafay Adeel" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="scroll-text">SCROLL</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="about-subtitle">Who am I?</h3>
+                    <p>
+                        Hi! I'm Rafay Adeel — a passionate Computer Science student at FAST NUCES with a strong
+                        foundation
+                        in problem-solving, analytical thinking, and software development.
+                    </p>
+                    <p>
+                        I love building meaningful projects that solve real-world problems, whether it's developing web
+                        platforms,
+                        designing algorithms, or working with data. My journey has been shaped by a constant curiosity
+                        to learn new
+                        technologies and a drive to improve my skills every day.
+                    </p>
+                    <p>
+                        Beyond coding, I enjoy collaborating in teams, taking on leadership roles, and contributing to
+                        impactful initiatives
+                        like TEDxFAST Faisalabad and VANAR. I'm currently looking for opportunities to gain hands-on
+                        experience, work with talented teams,
+                        and make a positive contribution to the tech world.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/rafay-adeel" target="_blank" class="social-icon"
+                            title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="mailto:rafayadeel1999@gmail.com" class="social-icon" title="Email">
+                            <i class="far fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/rafay-adeel" target="_blank" class="social-icon" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                    <div class="cv-download">
+                        <a href="#" class="btn primary-btn">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                    </div>
+                </div>
+                <div class="skills-container">
+                    <h3 class="about-subtitle">My Skills</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-server"></i></div>
+                            <span>Express</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-code"></i></div>
+                            <span>C++</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <span>HTML</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <span>CSS</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-server"></i></div>
+                            <span>Oracle</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+                            <span>Visual Studio</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="far fa-file-word"></i></div>
+                            <span>MS Office</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fab fa-r-project"></i></div>
+                            <span>R Language</span>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon"><i class="fas fa-code"></i></div>
+                            <span>C#</span>
+                        </div>
+                    </div>
+                    <h3 class="about-subtitle">Interests</h3>
+                    <div class="interests">
+                        <span class="interest-tag">Software Development</span>
+                        <span class="interest-tag">Web Development</span>
+                        <span class="interest-tag">Problem Solving</span>
+                        <span class="interest-tag">Artificial Intelligence</span>
+                        <span class="interest-tag">Data Science</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=500" alt="Feedia">
+                    </div>
+                    <div class="project-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Feedia</h3>
+                        <p class="project-date">May 2025</p>
+                        <p class="project-description">
+                            Developed a community-driven platform where hotels and restaurants can donate surplus food
+                            to help feed the underprivileged. The platform connects food donors with local charities and
+                            volunteers for efficient food distribution, reducing waste while addressing hunger in
+                            communities.
+                        </p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=500" alt="Chat App">
+                    </div>
+                    <div class="project-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Chat App</h3>
+                        <p class="project-date">Feb 2025</p>
+                        <p class="project-description">
+                            Built a real-time chat application with features including private messaging, group chats,
+                            file sharing, and online status indicators. Implemented WebSocket connections for instant
+                            messaging and user authentication.
+                        </p>
+                        <div class="project-tech">
+                            <span>Node.js</span>
+                            <span>Socket.io</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://thumbs.dreamstime.com/b/man-using-taxi-booking-app-his-smartphone-waiting-ride-urban-setting-flat-vector-illustration-symbolizing-358316447.jpg"
+                            alt="Ride Booking">
+                    </div>
+                    <div class="project-icon">
+                        <i class="fas fa-taxi"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Ride Booking System</h3>
+                        <p class="project-date">Apr 2024</p>
+                        <p class="project-description">
+                            Developed Transport Management System in C++ using OOP concepts, where customer can book a
+                            ride or transport goods
+                            and the driver can choose to accept or reject rides.
+                        </p>
+                        <div class="project-tech">
+                            <span>C++</span>
+                            <span>OOP</span>
+                            <span>Data Structures</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=500"
+                            alt="Airline System">
+                    </div>
+                    <div class="project-icon">
+                        <i class="fas fa-plane-departure"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Airline Management System</h3>
+                        <p class="project-date">May 2024</p>
+                        <p class="project-description">
+                            Developing Airline Management System in C# Windows Form using SQL Database to streamline
+                            airline operations:
+                            ticket reservation, flight scheduling, crew management, maintenance tracking, passenger
+                            services,
+                            revenue management, baggage handling, and reporting/analytics.
+                        </p>
+                        <div class="project-tech">
+                            <span>C#</span>
+                            <span>SQL</span>
+                            <span>Windows Forms</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=500" alt="Mini OS">
+                    </div>
+                    <div class="project-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Mini Operating System</h3>
+                        <p class="project-date">May 2024</p>
+                        <p class="project-description">
+                            Developed a terminal-based Mini OS with essential utilities such as a text editor,
+                            calculator, and basic games.
+                            Implemented efficient resource management with features like process and thread creation,
+                            context switching,
+                            and CPU utilization. Enabled multi-tasking and interrupt handling for a robust operating
+                            environment.
+                        </p>
+                        <div class="project-tech">
+                            <span>C++</span>
+                            <span>OS Concepts</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=500" alt="Dictionary">
+                    </div>
+                    <div class="project-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Dictionary</h3>
+                        <p class="project-date">Dec 2023</p>
+                        <p class="project-description">
+                            Implemented a dictionary using a Trie, allowing you to add, search, delete, and update words
+                            and their meanings,
+                            as well as get word suggestions based on a given prefix. The Trie structure efficiently
+                            handles these operations,
+                            ensuring fast retrieval and management of words and their associated data.
+                        </p>
+                        <div class="project-tech">
+                            <span>Data Structures</span>
+                            <span>C++</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=500"
+                            alt="NY Stock Exchange Analysis">
+                    </div>
+                    <div class="project-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>NY Stock Exchange Analysis</h3>
+                        <p class="project-date">Dec 2023</p>
+                        <p class="project-description">
+                            Conducted comprehensive analysis of NYSE stock data using R programming. Implemented
+                            statistical models for price prediction, volatility analysis, and trend identification.
+                            Created interactive visualizations and generated detailed reports on market patterns.
+                        </p>
+                        <div class="project-tech">
+                            <span>R Language</span>
+                            <span>Data Analysis</span>
+                            <span>Statistics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnB0HvEg3OmGz6n9uBF2FSqVD4i9ChOzu0ug&s"
+                            alt="Snake Game">
+                    </div>
+                    <div class="project-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3>Snake Game</h3>
+                        <p class="project-date">Dec 2023</p>
+                        <p class="project-description">
+                            Created snake game in x86 assembly language for DOS operating system and can be run in
+                            DosBox nowadays.
+                        </p>
+                        <div class="project-tech">
+                            <span>Assembly</span>
+                            <span>8088</span>
+                            <span>DOS</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="github-link-container">
+                <a href="https://github.com/CodeRafay" target="_blank" class="github-link">
+                    <i class="fab fa-github"></i> View more projects on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="experience-content">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Teaching Assistant</h3>
+                        <p class="experience-place">FAST NUCES</p>
+                    </div>
+                    <div class="experience-details">
+                        <div class="experience-subject">
+                            <h4>Database Systems</h4>
+                        </div>
+                        <div class="experience-subject">
+                            <h4>Object Oriented Programming</h4>
+                        </div>
+                        <div class="experience-subject">
+                            <h4>Software Design and Analysis</h4>
+                        </div>
+                        <div class="experience-subject">
+                            <h4>Linear Algebra</h4>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Volunteering & Leadership</h3>
+                    </div>
+                    <div class="experience-details">
+                        <div class="experience-subject">
+                            <h4><a href="https://www.ted.com/tedx/events/58961" target="_blank">
+                                    Logistics Head - TEDxFAST Faisalabad</a></h4>
+                        </div>
+                        <div class="experience-subject">
+                            <h4>E-Commerce Event Lead - Daira'25</h4>
+                        </div>
+                        <div class="experience-subject">
+                            <h4>Management</h4>
+                            <p>Daira '23, Daira '24, Job Fair '24, Daira '25, Job Fair '25</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>BS in Computer Science</h3>
+                        <h4>FAST NUCES</h4>
+                        <p class="timeline-date">August 2022 - Present</p>
+                        <div class="achievements">
+                            <p class="achievement">
+                                <i class="fas fa-medal"></i>
+                                Silver Medal - Academic Excellence Fall'22
+                            </p>
+                            <p class="achievement">
+                                <i class="fas fa-trophy"></i>
+                                Dean's List – Fall'22, Spring'23, Fall'23, Spring'24, Fall'24
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="carousel-item">
-              <div class="testimonial-item">
-                <div class="testimonial-content">
-                  <div class="testimonial-icon">
-                    <i class="fas fa-quote-left"></i>
-                  </div>
-                  <p>Working with Rafay was a pleasure from start to finish. He took the time to understand our
-                    requirements and delivered a solution that exceeded our expectations. His technical expertise and
-                    creative approach resulted in a product that our customers love.</p>
-                  <div class="testimonial-author">
-                    <div class="author-img">
-                      <img src="/placeholder.svg?height=80&width=80" alt="Michael Chen">
+            <h2 class="section-title certifications-title">Certifications</h2>
+            <div class="certifications">
+                <a href="https://coursera.org/share/34f3378e6d854fe718cbc88a02e2480d" target="_blank" class="cert-item">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="cert-content">
+                        <h3>Database Structures and Management with MySQL</h3>
+                        <p>META | March 2024</p>
                     </div>
-                    <div class="author-info">
-                      <h5>Michael Chen</h5>
-                      <span>CEO, Innovate Solutions</span>
+                </a>
+                <a href="https://coursera.org/share/889fa79d0c922c0b44b00620f42453d8" target="_blank" class="cert-item">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="cert-content">
+                        <h3>Python for Data Science, AI & Development</h3>
+                        <p>IBM | January 2024</p>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="carousel-item">
-              <div class="testimonial-item">
-                <div class="testimonial-content">
-                  <div class="testimonial-icon">
-                    <i class="fas fa-quote-left"></i>
-                  </div>
-                  <p>Rafay is a true problem solver! When our project hit a roadblock, he quickly identified the issue
-                    and implemented an elegant solution. His communication skills are excellent, and he always keeps the
-                    project on track. I highly recommend his services.</p>
-                  <div class="testimonial-author">
-                    <div class="author-img">
-                      <img src="/placeholder.svg?height=80&width=80" alt="Emily Rodriguez">
+                </a>
+                <a href="https://coursera.org/share/043d85d4a44b2c16b9b01496c4da4fda" target="_blank" class="cert-item">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="cert-content">
+                        <h3>Introduction to Databases</h3>
+                        <p>IBM | February 2024</p>
                     </div>
-                    <div class="author-info">
-                      <h5>Emily Rodriguez</h5>
-                      <span>Project Manager, Digital Ventures</span>
+                </a>
+                <a href="https://coursera.org/share/68e22f9b8b7da38053a7d4e93457462c" target="_blank" class="cert-item">
+                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
+                    <div class="cert-content">
+                        <h3>Crash Course on Python</h3>
+                        <p>Google | July 2023</p>
                     </div>
-                  </div>
-                </div>
-              </div>
+                </a>
             </div>
-          </div>
-
-          <div class="carousel-controls">
-            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
-              data-bs-slide="prev">
-              <i class="fas fa-chevron-left"></i>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
-              data-bs-slide="next">
-              <i class="fas fa-chevron-right"></i>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active"
-              aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1"
-              aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2"
-              aria-label="Slide 3"></button>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section-padding">
-    <div class="container">
-      <div class="section-title" data-aos="fade-up">
-        <h2>Let's Build Something Together</h2>
-        <div class="title-bar"></div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6" data-aos="fade-right" data-aos-delay="200">
-          <div class="contact-info">
-            <h3>Contact Information</h3>
-            <p>Feel free to reach out to me for any inquiries, project discussions, or collaboration opportunities. I'm
-              always open to new challenges and exciting projects.</p>
-
-            <div class="contact-details mt-4">
-              <div class="contact-item">
-                <div class="contact-icon">
-                  <i class="fas fa-envelope"></i>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="far fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Email</h3>
+                            <p><a href="mailto:rafayadeel1999@gmail.com">rafayadeel1999@gmail.com</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+923023966541">+92 3023966541</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>LinkedIn</h3>
+                            <p><a href="https://www.linkedin.com/in/rafay-adeel-64589a315/" target="_blank">Visit
+                                    LinkedIn</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>GitHub</h3>
+                            <p><a href="https://github.com/CodeRafay" target="_blank">Visit GitHub</a></p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h3>Location</h3>
+                            <p>Faisalabad, Pakistan</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="contact-text">
-                  <h5>Email</h5>
-                  <p>rafayadeel1999@gmail.com</p>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder=" " required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder=" " required>
+                            <label for="email">Your Email</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" id="subject" name="subject" placeholder=" " required>
+                            <label for="subject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder=" " required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn primary-btn">Send Message</button>
+                    </form>
                 </div>
-              </div>
-
-              <div class="contact-item">
-                <div class="contact-icon">
-                  <i class="fas fa-phone-alt"></i>
-                </div>
-                <div class="contact-text">
-                  <h5>Phone</h5>
-                  <p>+92 (302) 3966-541</p>
-                </div>
-              </div>
-
-              <div class="contact-item">
-                <div class="contact-icon">
-                  <i class="fas fa-map-marker-alt"></i>
-                </div>
-                <div class="contact-text">
-                  <h5>Location</h5>
-                  <p>Faisalabad, PB, Pakistan</p>
-                </div>
-              </div>
-
-              <div class="contact-item">
-                <div class="contact-icon">
-                  <i class="fas fa-clock"></i>
-                </div>
-                <div class="contact-text">
-                  <h5>Working Hours</h5>
-                  <p>Monday - Friday: 9 AM - 6 PM</p>
-                </div>
-              </div>
             </div>
+        </div>
+    </section>
 
-            <div class="social-links mt-4">
-              <a href="https://github.com/CodeRafay" target="_blank" class="social-link"><i
-                  class="fab fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/rafay-adeel-64589a315/" target="_blank" class="social-link"><i
-                  class="fab fa-linkedin-in"></i></a>
-              <a href="https://twitter.com" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
-              <a href="https://instagram.com" target="_blank" class="social-link"><i class="fab fa-instagram"></i></a>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#home">RA</a>
+                </div>
+                <p>&copy; 2025 Rafay Adeel. All Rights Reserved.</p>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/rafay-adeel-64589a315/" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="mailto:rafayadeel1999@gmail.com" class="social-icon">
+                        <i class="far fa-envelope"></i>
+                    </a>
+                    <a href="https://github.com/CodeRafay" target="_blank" class="social-icon">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
             </div>
-          </div>
         </div>
+    </footer>
 
-        <div class="col-lg-6" data-aos="fade-left" data-aos-delay="400">
-          <div class="contact-form-container">
-            <form id="contactForm" class="contact-form">
-              <div class="row">
-                <div class="col-md-6 mb-4">
-                  <div class="form-group">
-                    <label for="name">Your Name</label>
-                    <input type="text" id="name" class="form-control" required>
-                  </div>
-                </div>
-
-                <div class="col-md-6 mb-4">
-                  <div class="form-group">
-                    <label for="email">Your Email</label>
-                    <input type="email" id="email" class="form-control" required>
-                  </div>
-                </div>
-              </div>
-
-              <div class="form-group mb-4">
-                <label for="subject">Subject</label>
-                <input type="text" id="subject" class="form-control" required>
-              </div>
-
-              <div class="form-group mb-4">
-                <label for="message">Your Message</label>
-                <textarea id="message" rows="5" class="form-control" required></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Final CTA Section -->
-  <section id="cta" class="section-padding bg-gradient">
-    <div class="container text-center">
-      <div data-aos="fade-up">
-        <h2 class="cta-title">Interested in Working Together?</h2>
-        <p class="cta-text">Whether it's freelance work, collaboration, or a new opportunity, I'm just one message away.
-        </p>
-        <a href="#contact" class="btn btn-light btn-lg mt-4">Let's Talk</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer id="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4 mb-4 mb-lg-0">
-          <div class="footer-info">
-            <a href="#hero" class="footer-logo">RA</a>
-            <p>Creating beautiful, functional digital experiences that make a difference.</p>
-          </div>
-        </div>
-
-        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-          <h5 class="footer-heading">Navigation</h5>
-          <ul class="footer-links">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
-          <h5 class="footer-heading">More</h5>
-          <ul class="footer-links">
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="assets/resume.pdf" download>Resume</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-        </div>
-
-        <div class="col-lg-4">
-          <h5 class="footer-heading">Connect</h5>
-          <div class="footer-social">
-            <a href="https://github.com/CodeRafay" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/rafay-adeel-64589a315/" target="_blank"><i
-                class="fab fa-linkedin-in"></i></a>
-            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="footer-bottom">
-        <div class="copyright">
-          <p>&copy; 2025 Rafay Adeel. All rights reserved.</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Back to Top Button -->
-  <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
-
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <!-- Isotope (for filtering projects) -->
-  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
-  <!-- AOS Animation Library -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <!-- Custom JS -->
-  <script src="js/main.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
