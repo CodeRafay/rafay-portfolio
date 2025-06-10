@@ -95,26 +95,122 @@ document.addEventListener("DOMContentLoaded", () => {
     })
   })
 
-  // Form submission
+  // Google Forms Integration
   const contactForm = document.getElementById("contactForm")
+  const submitBtn = document.getElementById("submitBtn")
+  const btnText = submitBtn.querySelector(".btn-text")
+  const btnLoading = submitBtn.querySelector(".btn-loading")
+  const formStatus = document.getElementById("form-status")
+
+  function showStatus(message, type) {
+    formStatus.textContent = message
+    formStatus.className = `form-status ${type}`
+    formStatus.style.display = "block"
+
+    // Auto-hide after 5 seconds
+    setTimeout(() => {
+      formStatus.style.display = "none"
+    }, 5000)
+  }
+
+  function setLoadingState(isLoading) {
+    if (isLoading) {
+      submitBtn.disabled = true
+      btnText.style.display = "none"
+      btnLoading.style.display = "inline-block"
+      submitBtn.style.opacity = "0.7"
+    } else {
+      submitBtn.disabled = false
+      btnText.style.display = "inline-block"
+      btnLoading.style.display = "none"
+      submitBtn.style.opacity = "1"
+    }
+  }
+
+  // Form validation
+  function validateForm() {
+    const name = document.getElementById("name").value.trim()
+    const email = document.getElementById("email").value.trim()
+    const subject = document.getElementById("subject").value.trim()
+    const message = document.getElementById("message").value.trim()
+
+    if (!name || name.length < 2) {
+      showStatus("Please enter a valid name (at least 2 characters)", "error")
+      return false
+    }
+
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
+    if (!email || !emailRegex.test(email)) {
+      showStatus("Please enter a valid email address", "error")
+      return false
+    }
+
+    if (!subject || subject.length < 3) {
+      showStatus("Please enter a subject (at least 3 characters)", "error")
+      return false
+    }
+
+    if (!message || message.length < 10) {
+      showStatus("Please enter a message (at least 10 characters)", "error")
+      return false
+    }
+
+    return true
+  }
 
   if (contactForm) {
     contactForm.addEventListener("submit", (e) => {
       e.preventDefault()
 
-      // Get form values
-      const name = document.getElementById("name").value
-      const email = document.getElementById("email").value
-      const subject = document.getElementById("subject").value
-      const message = document.getElementById("message").value
+      // Validate form
+      if (!validateForm()) {
+        return
+      }
 
-      // Here you would typically send the form data to a server
-      // For now, we'll just show an alert
-      alert(`Thank you for your message! I'll get back to you soon.`)
+      // Check if Google Form is configured
+      const formAction = contactForm.getAttribute("action")
+      if (formAction.includes("YOUR_FORM_ID")) {
+        showStatus("Please configure Google Forms integration. See setup instructions below.", "error")
+        return
+      }
 
-      // Reset form
-      contactForm.reset()
+      setLoadingState(true)
+
+      // Create a copy of the form to submit
+      const formData = new FormData(contactForm)
+
+      // Submit to Google Forms
+      fetch(formAction, {
+        method: "POST",
+        body: formData,
+        mode: "no-cors", // Important for Google Forms
+      })
+        .then(() => {
+          // Since we're using no-cors, we can't read the response
+          // But Google Forms will accept the submission
+          showStatus("Thank you! Your message has been sent successfully. I'll get back to you soon!", "success")
+          contactForm.reset()
+        })
+        .catch((error) => {
+          console.error("Form submission error:", error)
+          showStatus("There was an error sending your message. Please try again or contact me directly.", "error")
+        })
+        .finally(() => {
+          setLoadingState(false)
+        })
     })
+  }
+
+  // Alternative: Handle iframe load event for better feedback
+  const hiddenIframe = document.getElementById("hidden_iframe")
+  if (hiddenIframe) {
+    hiddenIframe.onload = () => {
+      if (submitBtn.disabled) {
+        showStatus("Thank you! Your message has been sent successfully. I'll get back to you soon!", "success")
+        contactForm.reset()
+        setLoadingState(false)
+      }
+    }
   }
 
   // Skill items hover effect
@@ -258,7 +354,7 @@ document.addEventListener("DOMContentLoaded", () => {
     container.appendChild(particle)
   }
 
-  // Add particle animation keyframes
+  // Add particle animation keyframes and form status styles
   const style = document.createElement("style")
   style.textContent = `
     @keyframes floatParticle {
@@ -276,6 +372,49 @@ document.addEventListener("DOMContentLoaded", () => {
         transform: translateY(-100vh) rotate(360deg);
         opacity: 0;
       }
+    }
+    
+    /* Form Status Styles */
+    .form-status {
+      margin-top: 15px;
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-align: center;
+      animation: slideDown 0.3s ease;
+    }
+    
+    .form-status.success {
+      background: rgba(34, 197, 94, 0.1);
+      color: #22c55e;
+      border: 1px solid rgba(34, 197, 94, 0.3);
+    }
+    
+    .form-status.error {
+      background: rgba(239, 68, 68, 0.1);
+      color: #ef4444;
+      border: 1px solid rgba(239, 68, 68, 0.3);
+    }
+    
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    /* Button Loading State */
+    .btn:disabled {
+      cursor: not-allowed;
+    }
+    
+    .btn-loading {
+      display: none;
     }
   `
   document.head.appendChild(style)

@@ -114,11 +114,9 @@
                         technologies and a drive to improve my skills every day.
                     </p>
                     <p>
-                        Beyond coding, I enjoy collaborating in teams, taking on leadership roles, and contributing to
-                        impactful initiatives
-                        like TEDxFAST Faisalabad and VANAR. I'm currently looking for opportunities to gain hands-on
-                        experience, work with talented teams,
-                        and make a positive contribution to the tech world.
+                        Beyond coding, I enjoy collaborating in teams, taking on leadership as well as managerial roles, and contributing to
+                        impactful initiatives like TEDxFAST Faisalabad and DAIRA FAST. I'm currently looking for opportunities to gain hands-on
+                        experience, work with talented teams, and make a positive contribution to the tech world.
                     </p>
                     <div class="social-links">
                         <a href="https://linkedin.com/in/rafay-adeel" target="_blank" class="social-icon"
@@ -183,7 +181,7 @@
                         </div>
                         <div class="skill-item">
                             <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
-                            <span>Visual Studio</span>
+                            <span>VS Code</span>
                         </div>
                         <div class="skill-item">
                             <div class="skill-icon"><i class="far fa-file-word"></i></div>
@@ -495,32 +493,32 @@
 
             <h2 class="section-title certifications-title">Certifications</h2>
             <div class="certifications">
-                <a href="https://coursera.org/share/34f3378e6d854fe718cbc88a02e2480d" target="_blank" class="cert-item">
+                <a href="#" target="_blank" class="cert-item">
                     <div class="cert-icon"><i class="fas fa-certificate"></i></div>
                     <div class="cert-content">
                         <h3>Database Structures and Management with MySQL</h3>
-                        <p>META | March 2024</p>
+                        <!-- <p>META | March 2024</p> -->
                     </div>
                 </a>
-                <a href="https://coursera.org/share/889fa79d0c922c0b44b00620f42453d8" target="_blank" class="cert-item">
+                <a href="#" target="_blank" class="cert-item">
                     <div class="cert-icon"><i class="fas fa-certificate"></i></div>
                     <div class="cert-content">
                         <h3>Python for Data Science, AI & Development</h3>
-                        <p>IBM | January 2024</p>
+                        <!-- <p>IBM | January 2024</p> -->
                     </div>
                 </a>
-                <a href="https://coursera.org/share/043d85d4a44b2c16b9b01496c4da4fda" target="_blank" class="cert-item">
+                <a href="#" target="_blank" class="cert-item">
                     <div class="cert-icon"><i class="fas fa-certificate"></i></div>
                     <div class="cert-content">
                         <h3>Introduction to Databases</h3>
-                        <p>IBM | February 2024</p>
+                        <!-- <p>IBM | February 2024</p> -->
                     </div>
                 </a>
-                <a href="https://coursera.org/share/68e22f9b8b7da38053a7d4e93457462c" target="_blank" class="cert-item">
+                <a href="#" target="_blank" class="cert-item">
                     <div class="cert-icon"><i class="fas fa-certificate"></i></div>
                     <div class="cert-content">
                         <h3>Crash Course on Python</h3>
-                        <p>Google | July 2023</p>
+                        <!-- <p>Google | July 2023</p> -->
                     </div>
                 </a>
             </div>
@@ -581,25 +579,39 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <form id="contactForm">
+                    <!-- Google Forms Integration -->
+                    <form id="contactForm"
+                        action="https://docs.google.com/forms/d/e/1FAIpQLScw1PbntXqsx9BUT2yf7IOsiNf-_A99TmjffJ84v87aHBqhDQ/formResponse"
+                        method="POST" target="hidden_iframe">
                         <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder=" " required>
+                            <input type="text" id="name" name="entry.371530169" placeholder=" " required>
                             <label for="name">Your Name</label>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder=" " required>
+                            <input type="email" id="email" name="entry.1665995197" placeholder=" " required>
                             <label for="email">Your Email</label>
                         </div>
                         <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder=" " required>
+                            <input type="text" id="subject" name="entry.185249844" placeholder=" " required>
                             <label for="subject">Subject</label>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" name="message" placeholder=" " required></textarea>
+                            <textarea id="message" name="entry.497792568" placeholder=" " required></textarea>
                             <label for="message">Your Message</label>
                         </div>
-                        <button type="submit" class="btn primary-btn">Send Message</button>
+                        <button type="submit" class="btn primary-btn" id="submitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> Sending...
+                            </span>
+                        </button>
                     </form>
+
+                    <!-- Hidden iframe for form submission -->
+                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+
+                    <!-- Status Messages -->
+                    <div id="form-status" class="form-status" style="display: none;"></div>
                 </div>
             </div>
         </div>
