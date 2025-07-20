@@ -1,206 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafay Adeel | Portfolio</title>
+    <title>Rafay Adeel | Computer Science Engineer</title>
+    <meta name="description" content="Rafay Adeel - Computer Science student at FAST NUCES, passionate about web development, AI, and creating innovative software solutions.">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link type="image/png" sizes="16x16" rel="icon" href="https://img.icons8.com/isometric/50/r.png">
 </head>
-
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="#home">RA</a>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-text">RA</span>
+                <div class="brand-dot"></div>
             </div>
-            <nav class="desktop-nav">
-                <ul>
-                    <li><a href="#home" class="nav-link active">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#experience" class="nav-link">Experience</a></li>
-                    <li><a href="#education" class="nav-link">Education</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                    <li><a href="#resume" class="nav-link resume-link">Resume</a></li>
-                </ul>
-            </nav>
-            <div class="menu-toggle">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#work" class="nav-link">Work</a>
+                <a href="#journey" class="nav-link">Journey</a>
+                <a href="#connect" class="nav-link">Connect</a>
+				<a href="#" class="nav-resume-btn" id="nav-resume-btn">
+                    <i class="fas fa-download"></i>
+                    <span>Resume</span>
+                </a>
+                <button class="theme-toggle" id="theme-toggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
-    </header>
+    </nav>
 
-    <!-- Mobile Navigation -->
-    <div class="mobile-nav">
-        <ul>
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#projects" class="nav-link">Projects</a></li>
-            <li><a href="#experience" class="nav-link">Experience</a></li>
-            <li><a href="#education" class="nav-link">Education</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-            <li><a href="#resume" class="resume-link">Resume</a></li>
-        </ul>
-    </div>
-
-    <!-- Home Section -->
-    <section id="home" class="section">
-        <div class="video-bg-container">
-            <video class="video-bg" autoplay muted loop playsinline>
-                <!--will add video when available-->
-                <source src="background.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div class="container">
-            <div class="home-content">
-                <div class="text-zone">
-                    <h1 class="title">
-                        <span class="title-word">Hello,</span>
-                        <span class="title-word">I'm</span>
-                        <span class="title-word highlight">Rafay Adeel</span>
-                    </h1>
-                    <h2 class="subtitle">I am a <span id="animated-subtitle"></span></h2>
-                    <p class="description">
-                        An ambitious student currently pursuing a bachelor's in Computer Science from FAST NUCES,
-                        skilled in problem-solving and analytical thinking.
-                    </p>
-                    <div class="cta-buttons">
-                        <a href="#projects" class="btn primary-btn">View Projects</a>
-                        <a href="#contact" class="btn secondary-btn">Contact Me</a>
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for opportunities
+                </div>
+                <h1 class="hero-title">
+                    Building the future with
+                    <span class="gradient-text">intelligent code</span>
+                </h1>
+                <p class="hero-description">
+                    Computer Science Engineer | Crafting Intelligent Systems & Secure Software Solutions to Drive Innovation
+                </p>
+                <div class="hero-actions">
+                    <button class="btn btn-primary" id="view-work-btn">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-secondary" id="lets-connect-btn">
+                        <span>Let's Connect</span>
+                        <i class="fas fa-coffee"></i>
+                    </button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">10+</span>
+                        <span class="stat-label">Projects Built</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Years Learning</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">5</span>
+                        <span class="stat-label">Dean's List</span>
                     </div>
                 </div>
-                <div class="home-image">
-                    <div class="image-container">
-                        <div class="circle-bg"></div>
-                        <img src="assets/profile-image.png" alt="Rafay Adeel" class="profile-img">
-                    </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card card-1">
+                    <i class="fab fa-react"></i>
+                    <span>React</span>
+                </div>
+                <div class="floating-card card-2">
+                    <i class="fab fa-node-js"></i>
+                    <span>Node.js</span>
+                </div>
+                <div class="floating-card card-3">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="floating-card card-4">
+                    <i class="fas fa-database"></i>
+                    <span>Database</span>
+                </div>
+                <div class="floating-card card-5">
+                    <i class="fab fa-js-square"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="floating-card card-6">
+                    <i class="fab fa-git-alt"></i>
+                    <span>Git</span>
+                </div>
+                <div class="hero-image">
+                    <div class="image-glow"></div>
+                    <img src="assets/profile-image.jpeg" alt="Rafay Adeel" class="profile-image">
                 </div>
             </div>
         </div>
-
-        <!-- Scroll Indicator -->
         <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-            <div class="scroll-text">SCROLL</div>
+            <div class="scroll-line"></div>
+            <span>Scroll to explore</span>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section">
+    <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <h3 class="about-subtitle">Who am I?</h3>
-                    <p>
-                        Hi! I'm Rafay Adeel — a passionate Computer Science student at FAST NUCES with a strong
-                        foundation
-                        in problem-solving, analytical thinking, and software development.
-                    </p>
-                    <p>
-                        I love building meaningful projects that solve real-world problems, whether it's developing web
-                        platforms,
-                        designing algorithms, or working with data. My journey has been shaped by a constant curiosity
-                        to learn new
-                        technologies and a drive to improve my skills every day.
-                    </p>
-                    <p>
-                        Beyond coding, I enjoy collaborating in teams, taking on leadership as well as managerial roles, and contributing to
-                        impactful initiatives like TEDxFAST Faisalabad and DAIRA FAST. I'm currently looking for opportunities to gain hands-on
-                        experience, work with talented teams, and make a positive contribution to the tech world.
-                    </p>
-                    <div class="social-links">
-                        <a href="https://linkedin.com/in/rafay-adeel" target="_blank" class="social-icon"
-                            title="LinkedIn">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                        <a href="mailto:rafayadeel1999@gmail.com" class="social-icon" title="Email">
-                            <i class="far fa-envelope"></i>
-                        </a>
-                        <a href="https://github.com/rafay-adeel" target="_blank" class="social-icon" title="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                    <div class="cv-download">
-                        <a href="#" class="btn primary-btn">
-                            <i class="fas fa-download"></i> Download Resume
-                        </a>
+            <div class="section-header">
+                <span class="section-tag">Get to know me</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="lead">
+                            I'm a passionate Computer Science student at FAST NUCES with a love for creating 
+                            digital experiences that matter. My journey in tech started with curiosity and 
+                            has evolved into a mission to build solutions that make a real impact.
+                        </p>
+                        <p>
+                            When I'm not coding, you'll find me leading teams at TEDxFAST Faisalabad, 
+                            mentoring fellow students as a Teaching Assistant, or exploring the latest 
+                            in AI and web technologies. I believe in learning by doing and sharing 
+                            knowledge with the community.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight">
+                                <i class="fas fa-graduation-cap"></i>
+                                <div>
+                                    <h4>Academic Excellence</h4>
+                                    <p>Silver Medal & 5x Dean's List</p>
+                                </div>
+                            </div>
+                            <div class="highlight">
+                                <i class="fas fa-users"></i>
+                                <div>
+                                    <h4>Leadership</h4>
+                                    <p>TEDx Logistics Head & TA</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="skills-container">
-                    <h3 class="about-subtitle">My Skills</h3>
+                <div class="skills-section">
+                    <h3>Technologies I work with</h3>
                     <div class="skills-grid">
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-react"></i></div>
-                            <span>React</span>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-laptop-code"></i> Frontend</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag"><i class="fab fa-react"></i> React</span>
+                                <span class="skill-tag"><i class="fab fa-js-square"></i> JavaScript</span>
+                                <span class="skill-tag"><i class="fab fa-html5"></i> HTML/CSS</span>
+                            </div>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
-                            <span>Node.js</span>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-server"></i> Backend</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag"><i class="fab fa-node-js"></i> Node.js</span>
+                                <span class="skill-tag"><i class="fas fa-code"></i> Express</span>
+                                <span class="skill-tag"><i class="fab fa-python"></i> Python</span>
+                            </div>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-js"></i></div>
-                            <span>JavaScript</span>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-database"></i> Database</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag"><i class="fas fa-leaf"></i> MongoDB</span>
+                                <span class="skill-tag"><i class="fas fa-database"></i> SQL</span>
+                                <span class="skill-tag"><i class="fas fa-server"></i> Oracle</span>
+                                <span class="skill-tag"><i class="fas fa-cloud"></i> Supabase (PostgreSQL)</span>
+                            </div>
                         </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fas fa-server"></i></div>
-                            <span>Express</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fas fa-code"></i></div>
-                            <span>C++</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
-                            <span>HTML</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
-                            <span>CSS</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-python"></i></div>
-                            <span>Python</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fas fa-database"></i></div>
-                            <span>SQL</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fas fa-server"></i></div>
-                            <span>Oracle</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
-                            <span>VS Code</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="far fa-file-word"></i></div>
-                            <span>MS Office</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fab fa-r-project"></i></div>
-                            <span>R Language</span>
-                        </div>
-                        <div class="skill-item">
-                            <div class="skill-icon"><i class="fas fa-code"></i></div>
-                            <span>C#</span>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-code"></i> Languages</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag"><i class="fas fa-code"></i> C++</span>
+                                <span class="skill-tag"><i class="fab fa-microsoft"></i> C#</span>
+                                <span class="skill-tag"><i class="fab fa-r-project"></i> R</span>
+                            </div>
                         </div>
                     </div>
-                    <h3 class="about-subtitle">Interests</h3>
+                    
+                    <h3>Interests</h3>
                     <div class="interests">
-                        <span class="interest-tag">Software Development</span>
                         <span class="interest-tag">Web Development</span>
                         <span class="interest-tag">Problem Solving</span>
+                        <span class="interest-tag">Software Development</span>
                         <span class="interest-tag">Artificial Intelligence</span>
                         <span class="interest-tag">Data Science</span>
                     </div>
@@ -209,105 +207,44 @@
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
+    <!-- Work Section -->
+    <section id="work" class="work">
         <div class="container">
-            <h2 class="section-title">Projects</h2>
+            <div class="section-header">
+                <span class="section-tag">My creations</span>
+                <h2 class="section-title">Featured Work</h2>
+                <p class="section-description">
+                    A collection of projects that showcase my journey in software development, 
+                    from web applications to system-level programming.
+                </p>
+            </div>
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card featured">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=500" alt="Feedia">
-                    </div>
-                    <div class="project-icon">
-                        <i class="fas fa-heart"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Feedia</h3>
-                        <p class="project-date">May 2025</p>
-                        <p class="project-description">
-                            Developed a community-driven platform where hotels and restaurants can donate surplus food
-                            to help feed the underprivileged. The platform connects food donors with local charities and
-                            volunteers for efficient food distribution, reducing waste while addressing hunger in
-                            communities.
-                        </p>
-                        <div class="project-tech">
-                            <span>React</span>
-                            <span>Node.js</span>
-                            <span>Express</span>
-                            <span>MongoDB</span>
+                        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=500" alt="Airline Management System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/codeRafay?tab=repositories" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=500" alt="Chat App">
-                    </div>
-                    <div class="project-icon">
-                        <i class="fas fa-comments"></i>
-                    </div>
                     <div class="project-content">
-                        <h3>Chat App</h3>
-                        <p class="project-date">Feb 2025</p>
+                        <div class="project-header">
+                            <div class="project-title-with-icon">
+                                <i class="fas fa-plane-departure project-icon"></i>
+                                <h3>Airline Management System</h3>
+                            </div>
+                            <!-- This is a comment <span class="project-status">Latest</span> -->
+                        </div> 
                         <p class="project-description">
-                            Built a real-time chat application with features including private messaging, group chats,
-                            file sharing, and online status indicators. Implemented WebSocket connections for instant
-                            messaging and user authentication.
-                        </p>
-                        <div class="project-tech">
-                            <span>Node.js</span>
-                            <span>Socket.io</span>
-                            <span>Express</span>
-                            <span>MongoDB</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://thumbs.dreamstime.com/b/man-using-taxi-booking-app-his-smartphone-waiting-ride-urban-setting-flat-vector-illustration-symbolizing-358316447.jpg"
-                            alt="Ride Booking">
-                    </div>
-                    <div class="project-icon">
-                        <i class="fas fa-taxi"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Ride Booking System</h3>
-                        <p class="project-date">Apr 2024</p>
-                        <p class="project-description">
-                            Developed Transport Management System in C++ using OOP concepts, where customer can book a
-                            ride or transport goods
-                            and the driver can choose to accept or reject rides.
-                        </p>
-                        <div class="project-tech">
-                            <span>C++</span>
-                            <span>OOP</span>
-                            <span>Data Structures</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=500"
-                            alt="Airline System">
-                    </div>
-                    <div class="project-icon">
-                        <i class="fas fa-plane-departure"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Airline Management System</h3>
-                        <p class="project-date">May 2024</p>
-                        <p class="project-description">
-                            Developing Airline Management System in C# Windows Form using SQL Database to streamline
-                            airline operations:
-                            ticket reservation, flight scheduling, crew management, maintenance tracking, passenger
-                            services,
-                            revenue management, baggage handling, and reporting/analytics.
+                            Comprehensive system for airline operations including ticket reservation, flight scheduling, 
+                            crew management, maintenance tracking, passenger services, and revenue management.
                         </p>
                         <div class="project-tech">
                             <span>C#</span>
-                            <span>SQL</span>
+                            <span>SQL Server</span>
                             <span>Windows Forms</span>
                         </div>
                     </div>
@@ -315,88 +252,20 @@
 
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=500" alt="Mini OS">
-                    </div>
-                    <div class="project-icon">
-                        <i class="fas fa-microchip"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Mini Operating System</h3>
-                        <p class="project-date">May 2024</p>
-                        <p class="project-description">
-                            Developed a terminal-based Mini OS with essential utilities such as a text editor,
-                            calculator, and basic games.
-                            Implemented efficient resource management with features like process and thread creation,
-                            context switching,
-                            and CPU utilization. Enabled multi-tasking and interrupt handling for a robust operating
-                            environment.
-                        </p>
-                        <div class="project-tech">
-                            <span>C++</span>
-                            <span>OS Concepts</span>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnB0HvEg3OmGz6n9uBF2FSqVD4i9ChOzu0ug&s" alt="Snake Game">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/codeRafay?tab=repositories" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=500" alt="Dictionary">
-                    </div>
-                    <div class="project-icon">
-                        <i class="fas fa-book"></i>
-                    </div>
                     <div class="project-content">
-                        <h3>Dictionary</h3>
-                        <p class="project-date">Dec 2023</p>
-                        <p class="project-description">
-                            Implemented a dictionary using a Trie, allowing you to add, search, delete, and update words
-                            and their meanings,
-                            as well as get word suggestions based on a given prefix. The Trie structure efficiently
-                            handles these operations,
-                            ensuring fast retrieval and management of words and their associated data.
-                        </p>
-                        <div class="project-tech">
-                            <span>Data Structures</span>
-                            <span>C++</span>
+                        <div class="project-title-with-icon">
+                            <i class="fas fa-gamepad project-icon"></i>
+                            <h3>Snake Game</h3>
                         </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=500"
-                            alt="NY Stock Exchange Analysis">
-                    </div>
-                    <div class="project-icon">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>NY Stock Exchange Analysis</h3>
-                        <p class="project-date">Dec 2023</p>
-                        <p class="project-description">
-                            Conducted comprehensive analysis of NYSE stock data using R programming. Implemented
-                            statistical models for price prediction, volatility analysis, and trend identification.
-                            Created interactive visualizations and generated detailed reports on market patterns.
-                        </p>
-                        <div class="project-tech">
-                            <span>R Language</span>
-                            <span>Data Analysis</span>
-                            <span>Statistics</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSnB0HvEg3OmGz6n9uBF2FSqVD4i9ChOzu0ug&s"
-                            alt="Snake Game">
-                    </div>
-                    <div class="project-icon">
-                        <i class="fas fa-gamepad"></i>
-                    </div>
-                    <div class="project-content">
-                        <h3>Snake Game</h3>
-                        <p class="project-date">Dec 2023</p>
                         <p class="project-description">
                             Created snake game in x86 assembly language for DOS operating system and can be run in
                             DosBox nowadays.
@@ -408,57 +277,268 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=500" alt="Real-time Chat App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/codeRafay?tab=repositories" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title-with-icon">
+                            <i class="fas fa-comments project-icon"></i>
+                            <h3>Real-time Chat Application</h3>
+                        </div>
+                        <p class="project-description">
+                            Feature-rich chat app with private messaging, group chats, and file sharing using Socket.io.
+                        </p>
+                        <div class="project-tech">
+                            <span>Socket.io</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?w=500" alt="Mini Operating System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/codeRafay?tab=repositories" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title-with-icon">
+                            <i class="fas fa-microchip project-icon"></i>
+                            <h3>Mini Operating System</h3>
+                        </div>
+                        <p class="project-description">
+                            Terminal-based OS with process management, multitasking, and essential utilities.
+                        </p>
+                        <div class="project-tech">
+                            <span>C++</span>
+                            <span>OS Concepts</span>
+                            <span>System Programming</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1593113598332-cd288d649433?w=500" alt="Feedia Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/codeRafay?tab=repositories" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title-with-icon">
+                            <i class="fas fa-heart project-icon"></i>
+                            <h3>Feedia</h3>
+                        </div>
+                        <p class="project-description">
+                            Community-driven platform connecting restaurants with charities to reduce food waste and fight hunger.
+                        </p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                            <span>MongoDB</span>
+                            <span>Express</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=500" alt="NYSE Analysis">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/codeRafay?tab=repositories" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title-with-icon">
+                            <i class="fas fa-chart-line project-icon"></i>
+                            <h3>NYSE Stock Analysis</h3>
+                        </div>
+                        <p class="project-description">
+                            Statistical analysis and prediction models for NYSE stock data with interactive visualizations.
+                        </p>
+                        <div class="project-tech">
+                            <span>R</span>
+                            <span>Data Analysis</span>
+                            <span>Statistics</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=500" alt="Dictionary with Trie">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/codeRafay?tab=repositories" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-title-with-icon">
+                            <i class="fas fa-book project-icon"></i>
+                            <h3>Smart Dictionary</h3>
+                        </div>
+                        <p class="project-description">
+                            Efficient dictionary implementation using Trie data structure with auto-suggestions.
+                        </p>
+                        <div class="project-tech">
+                            <span>C++</span>
+                            <span>Data Structures</span>
+                            <span>Algorithms</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="github-link-container">
-                <a href="https://github.com/CodeRafay" target="_blank" class="github-link">
-                    <i class="fab fa-github"></i> View more projects on GitHub
+            <div class="work-footer">
+                <a href="https://github.com/CodeRafay" target="_blank" class="btn btn-outline">
+                    <i class="fab fa-github"></i>
+                    <span>View All Projects on GitHub</span>
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="section">
+    <!-- Journey Section -->
+    <section id="journey" class="journey">
         <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="experience-content">
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3>Teaching Assistant</h3>
-                        <p class="experience-place">FAST NUCES</p>
-                    </div>
-                    <div class="experience-details">
-                        <div class="experience-subject">
-                            <h4>Database Systems</h4>
-                        </div>
-                        <div class="experience-subject">
-                            <h4>Object Oriented Programming</h4>
-                        </div>
-                        <div class="experience-subject">
-                            <h4>Software Design and Analysis</h4>
-                        </div>
-                        <div class="experience-subject">
-                            <h4>Linear Algebra</h4>
+            <div class="section-header">
+                <span class="section-tag">My path</span>
+                <h2 class="section-title">Journey & Experience</h2>
+            </div>
+            <div class="journey-content">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Teaching Assistant</h3>
+                                <span class="timeline-date">2023 - Present</span>
+                            </div>
+                            <p class="timeline-location">FAST NUCES</p>
+                            <div class="timeline-details">
+                                <div class="detail-item">
+                                    <strong>Database Systems:</strong> Helping students master SQL and database design
+                                </div>
+                                <div class="detail-item">
+                                    <strong>OOP:</strong> Teaching C++ and Java programming fundamentals
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Software Design:</strong> Guiding through architecture patterns
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Linear Algebra:</strong> Mathematical foundations for CS
+                                </div>
+                            </div>
                         </div>
                     </div>
 
+                  <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Volunteering & Leadership</h3>
+                                <span class="timeline-date">2023 - Present</span>
+                            </div>
+                            <p class="timeline-location">FAST NUCES</p>
+                            <div class="timeline-details">
+                                <div class="detail-item">
+                                    <strong><a href="https://www.ted.com/tedx/events/58961" target="_blank" style="color: var(--primary-color); text-decoration: none;">Logistics Head - TEDxFAST Faisalabad</a></strong>
+                                </div>
+                                <div class="detail-item">
+                                    <strong>E-Commerce Event Lead - Daira'25</strong>
+                                </div>
+                                <div class="detail-item">
+                                    <strong>Management:</strong> Daira '23, Daira '24, Job Fair '24, Daira '25, Job Fair '25
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>BS Computer Science</h3>
+                                <span class="timeline-date">2022 - Present</span>
+                            </div>
+                            <p class="timeline-location">FAST NUCES</p>
+                            <div class="timeline-achievements">
+                                <div class="achievement">
+                                    <i class="fas fa-medal"></i>
+                                    <span>Silver Medal - Academic Excellence</span>
+                                </div>
+                                <div class="achievement">
+                                    <i class="fas fa-trophy"></i>
+                                    <span>Dean's List (5 consecutive semesters)</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="experience-item">
-                    <div class="experience-header">
-                        <h3>Volunteering & Leadership</h3>
-                    </div>
-                    <div class="experience-details">
-                        <div class="experience-subject">
-                            <h4><a href="https://www.ted.com/tedx/events/58961" target="_blank">
-                                    Logistics Head - TEDxFAST Faisalabad</a></h4>
+                <div class="certifications">
+                    <h3>Certifications</h3>
+                    <div class="cert-grid">
+                        <div class="cert-item">
+                            <div class="cert-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="cert-content">
+                                <h4>Database Management with MySQL</h4>
+                                <p>META</p>
+                            </div>
                         </div>
-                        <div class="experience-subject">
-                            <h4>E-Commerce Event Lead - Daira'25</h4>
+                        <div class="cert-item">
+                            <div class="cert-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="cert-content">
+                                <h4>Python for Data Science & AI</h4>
+                                <p>IBM</p>
+                            </div>
                         </div>
-                        <div class="experience-subject">
-                            <h4>Management</h4>
-                            <p>Daira '23, Daira '24, Job Fair '24, Daira '25, Job Fair '25</p>
+                        <div class="cert-item">
+                            <div class="cert-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <div class="cert-content">
+                                <h4>Introduction to Databases</h4>
+                                <p>IBM</p>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <div class="cert-icon">
+                                <i class="fab fa-google"></i>
+                            </div>
+                            <div class="cert-content">
+                                <h4>Crash Course on Python</h4>
+                                <p>Google</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -466,181 +546,125 @@
         </div>
     </section>
 
-    <!-- Education Section -->
-    <section id="education" class="section">
+    <!-- Connect Section -->
+    <section id="connect" class="connect">
         <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>BS in Computer Science</h3>
-                        <h4>FAST NUCES</h4>
-                        <p class="timeline-date">August 2022 - Present</p>
-                        <div class="achievements">
-                            <p class="achievement">
-                                <i class="fas fa-medal"></i>
-                                Silver Medal - Academic Excellence Fall'22
-                            </p>
-                            <p class="achievement">
-                                <i class="fas fa-trophy"></i>
-                                Dean's List – Fall'22, Spring'23, Fall'23, Spring'24, Fall'24
-                            </p>
+            <div class="connect-content">
+                <div class="connect-info">
+                    <div class="section-header">
+                        <span class="section-tag">Let's work together</span>
+                        <h2 class="section-title">Ready to Connect?</h2>
+                        <p class="section-description">
+                            I'm always excited to discuss new opportunities, collaborate on interesting projects, 
+                            or just have a chat about technology and innovation.
+                        </p>
+                    </div>
+                    <div class="contact-methods">
+                        <a href="mailto:rafayadeel1999@gmail.com" class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>rafayadeel1999@gmail.com</p>
+                            </div>
+                        </a>
+                        <a href="https://linkedin.com/in/rafay-adeel" target="_blank" class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <p>Connect professionally</p>
+                            </div>
+                        </a>
+                        <a href="https://github.com/CodeRafay" target="_blank" class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>GitHub</h4>
+                                <p>Check out my code</p>
+                            </div>
+                        </a>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Faisalabad, Pakistan</p>
+                            </div>
                         </div>
+                    </div>
+                    <div class="resume-download">
+                        <button class="btn btn-primary" id="download-resume">
+                            <i class="fas fa-download"></i>
+                            <span>Download Resume</span>
+                        </button>
                     </div>
                 </div>
-            </div>
-
-            <h2 class="section-title certifications-title">Certifications</h2>
-            <div class="certifications">
-                <a href="#" target="_blank" class="cert-item">
-                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
-                    <div class="cert-content">
-                        <h3>Database Structures and Management with MySQL</h3>
-                        <!-- <p>META | March 2024</p> -->
-                    </div>
-                </a>
-                <a href="#" target="_blank" class="cert-item">
-                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
-                    <div class="cert-content">
-                        <h3>Python for Data Science, AI & Development</h3>
-                        <!-- <p>IBM | January 2024</p> -->
-                    </div>
-                </a>
-                <a href="#" target="_blank" class="cert-item">
-                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
-                    <div class="cert-content">
-                        <h3>Introduction to Databases</h3>
-                        <!-- <p>IBM | February 2024</p> -->
-                    </div>
-                </a>
-                <a href="#" target="_blank" class="cert-item">
-                    <div class="cert-icon"><i class="fas fa-certificate"></i></div>
-                    <div class="cert-content">
-                        <h3>Crash Course on Python</h3>
-                        <!-- <p>Google | July 2023</p> -->
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section">
-        <div class="container">
-            <h2 class="section-title">Contact Me</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="far fa-envelope"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Email</h3>
-                            <p><a href="mailto:rafayadeel1999@gmail.com">rafayadeel1999@gmail.com</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Phone</h3>
-                            <p><a href="tel:+923023966541">+92 3023966541</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-linkedin-in"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>LinkedIn</h3>
-                            <p><a href="https://www.linkedin.com/in/rafay-adeel-64589a315/" target="_blank">Visit
-                                    LinkedIn</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>GitHub</h3>
-                            <p><a href="https://github.com/CodeRafay" target="_blank">Visit GitHub</a></p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-text">
-                            <h3>Location</h3>
-                            <p>Faisalabad, Pakistan</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <!-- Google Forms Integration -->
-                    <form id="contactForm"
-                        action="https://docs.google.com/forms/d/e/1FAIpQLScw1PbntXqsx9BUT2yf7IOsiNf-_A99TmjffJ84v87aHBqhDQ/formResponse"
-                        method="POST" target="hidden_iframe">
+                <div class="connect-form">
+                    <form class="contact-form" id="contact-form">
                         <div class="form-group">
-                            <input type="text" id="name" name="entry.371530169" placeholder=" " required>
-                            <label for="name">Your Name</label>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="entry.371530169" required>
                         </div>
                         <div class="form-group">
-                            <input type="email" id="email" name="entry.1665995197" placeholder=" " required>
-                            <label for="email">Your Email</label>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="entry.1665995197" required>
                         </div>
                         <div class="form-group">
-                            <input type="text" id="subject" name="entry.185249844" placeholder=" " required>
                             <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="entry.185249844" required>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" name="entry.497792568" placeholder=" " required></textarea>
-                            <label for="message">Your Message</label>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="entry.497792568" rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn primary-btn" id="submitBtn">
+                        <button type="submit" class="btn btn-primary btn-full">
                             <span class="btn-text">Send Message</span>
                             <span class="btn-loading" style="display: none;">
-                                <i class="fas fa-spinner fa-spin"></i> Sending...
+                                <i class="fas fa-spinner fa-spin"></i>
+                                Sending...
                             </span>
                         </button>
                     </form>
-
-                    <!-- Hidden iframe for form submission -->
-                    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
-
-                    <!-- Status Messages -->
                     <div id="form-status" class="form-status" style="display: none;"></div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Hidden iframe for Google Forms submission -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted) {window.location='#connect';}"></iframe>
+
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <a href="#home">RA</a>
+                <div class="footer-brand">
+                    <span class="brand-text">Rafay Adeel</span>
+                    <p>Building the future, one line of code at a time.</p>
                 </div>
-                <p>&copy; 2025 Rafay Adeel. All Rights Reserved.</p>
-                <div class="footer-social">
-                    <a href="https://www.linkedin.com/in/rafay-adeel-64589a315/" target="_blank" class="social-icon">
-                        <i class="fab fa-linkedin-in"></i>
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/rafay-adeel" target="_blank">
+                        <i class="fab fa-linkedin"></i>
                     </a>
-                    <a href="mailto:rafayadeel1999@gmail.com" class="social-icon">
-                        <i class="far fa-envelope"></i>
-                    </a>
-                    <a href="https://github.com/CodeRafay" target="_blank" class="social-icon">
+                    <a href="https://github.com/CodeRafay" target="_blank">
                         <i class="fab fa-github"></i>
                     </a>
+                    <a href="mailto:rafayadeel1999@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Rafay Adeel. All Rights Reserved.</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
-
 </html>
